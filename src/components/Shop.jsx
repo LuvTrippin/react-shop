@@ -14,7 +14,7 @@ function Shop() {
             },
         }).then(responce => responce.json())
           .then(data => {
-                data.featured && setGoods(data.featured);
+                data.featured && setGoods(data.featured.filter(item => item.name !== ""));
                 setLoading(false);
             });
     }, []);

@@ -8,7 +8,7 @@ function GoodsItem(props) {
     } = props;
 
     const handleImageError = (event) => {
-        event.target.src = `https://placehold.co/257x257?text=${name}\\n${price}`;
+        event.target.src = `https://placehold.co/257x257?text=${name}\\nцена: ${price}`;
     };
 
     return (
