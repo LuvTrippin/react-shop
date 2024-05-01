@@ -54,6 +54,28 @@ nav {
   }
 }
 
-.cart-quantity {
+.basket-list {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 50rem;
+  max-width: 95%;
+  z-index: 10;
+}
 
+.basket-modal-close {
+  cursor: pointer;
+  position: fixed;
+  top: 40px;
+  right: 5%;
+}
+
+.collection-header {
+  background-color: #e1bee7 !important;
+}
+
+.basket-delete {
+  cursor: pointer;
 }

@@ -5,6 +5,7 @@ function GoodsItem(props) {
         description,
         price,
         full_background,
+        addToBasket = Function.prototype,
     } = props;
 
     const handleImageError = (event) => {
@@ -12,11 +13,11 @@ function GoodsItem(props) {
     };
 
     const handleClick = () => {
-        props.addToBasket({id, name, price});
+        addToBasket({id, name, price});
     }
 
     return (
-    <div className="card" id={id}>
+    <div className="card">
         <div className="card-image">
           <img src={full_background} alt={name} onError={handleImageError} />
           <button className="btn-floating halfway-fab waves-effect waves-light purple lighten-4" onClick={handleClick}><i className="material-icons">add</i></button>
