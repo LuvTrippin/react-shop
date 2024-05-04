@@ -63,6 +63,7 @@ nav {
   width: 50rem;
   max-width: 95%;
   z-index: 10;
+  animation: show 500ms ease-in-out;
 }
 
 .basket-modal-close {
@@ -78,4 +79,15 @@ nav {
 
 .basket-delete {
   cursor: pointer;
+}
+
+@keyframes show {
+  from {
+    top: 70%;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
 }
