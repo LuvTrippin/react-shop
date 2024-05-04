@@ -92,8 +92,28 @@ nav {
   }
 }
 
+@keyframes hide {
+  from {
+    top: 20%;
+    opacity: 1;
+  }
+  to {
+    top: 10%;
+    opacity: 0;
+  }
+}
+
 .basket-quantity {
   cursor: pointer;
   vertical-align: middle;
   color: #26a69a;
+}
+
+.toast-container {
+  position: fixed;
+  top: 20%;
+  right: 5%;
+  animation: hide 2010ms ease;
+  width: fit-content;
+  max-width: 90%;
 }
